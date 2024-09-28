@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:newfolder/homeScreen.dart';
-import 'package:newfolder/messengerScreen.dart';
+import 'package:newfolder/BMI/bmiScreen.dart';
+import 'package:newfolder/Screens/messengerScreen.dart';
 
 void main() {
   runApp(MyApp());

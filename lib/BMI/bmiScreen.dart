@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+class BMIScreen extends StatefulWidget {
+  const BMIScreen({super.key});
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<BMIScreen> createState() => _BMIScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _BMIScreenState extends State<BMIScreen> {
   double sliderVal =100;
 
   double weight = 0.0;
