@@ -50,7 +50,6 @@ class Messengerscreen extends StatelessWidget {
                   height: 70,
                   child: ListView.separated(
                     shrinkWrap: true,
-                      physics: NeverScrollableScrollPhysics(),
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index)=> buildStoryItem(),
                       separatorBuilder: (context, index)=>SizedBox(width: 8,),
@@ -78,7 +77,6 @@ Widget buildStoryItem() => Row(
       alignment: AlignmentDirectional.bottomEnd,
       children: [
         CircleAvatar(
-
           radius: 20,
           backgroundImage: AssetImage('assets/img1.jpg'),
         ),
