@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:newfolder/Authintication/signUp.dart';
+import 'package:newfolder/Screens/messengerScreen.dart';
 
 
 void main() {
@@ -14,7 +15,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Signup(),
+     // home: Signup(),
+      initialRoute: 'p1',
+      routes: {
+        'p1' :(c) => Signup() ,
+        'p2' : (c) => Messengerscreen()
+      },
     );
   }
 }

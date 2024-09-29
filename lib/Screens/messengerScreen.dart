@@ -1,19 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:newfolder/Authintication/AuthModel.dart';
 
 class Messengerscreen extends StatelessWidget {
-  const Messengerscreen({super.key});
+
+   Messengerscreen({super.key});
+
+
 
   @override
   Widget build(BuildContext context) {
+    // Authmodel auth = ModalRoute.of(context).settings.arguments;
     return Scaffold(
       appBar: AppBar(
         leading: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: const CircleAvatar(
-            backgroundColor: Colors.red,
-          ),
+          child: IconButton(onPressed: (){
+            Navigator.pop(context);
+          },
+          icon: Icon(Icons.arrow_back),)
         ),
-        title: const Text('Chats',
+        title:  Text('dfdsf',
         style: TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: 25,

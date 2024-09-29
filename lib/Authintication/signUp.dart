@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:newfolder/Authintication/AuthModel.dart';
+import 'package:newfolder/Screens/messengerScreen.dart';
 
 class Signup extends StatefulWidget {
   const Signup({super.key});
@@ -138,7 +140,15 @@ class _SignupState extends State<Signup> {
               ),
               SizedBox(height: 20,),
               ElevatedButton(onPressed: (){
+                Navigator.pushNamed(context,'p2',
+                    arguments: Authmodel(Name: 'MOhamed') );
+                ///what this line do ?
+                /// creation of stack : contains screens :
+                /// Routes : location , name
+                /// what is containing routes ?
+                /// MaterialPageRoute : builder : name , loc
                 setState(() {
+
                   if(formkey.currentState!.validate()) {
                     print(fName);
                     print(SName);
