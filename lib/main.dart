@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:newfolder/Authintication/signUp.dart';
-import 'package:newfolder/BMI/bmiScreen.dart';
-import 'package:newfolder/Screens/messengerScreen.dart';
+
+import 'Screens/DBCheckerScren.dart';
+
+
 
 
 void main() {
   runApp(MyApp());
+
 }
 
 
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: BMIScreen(),
+      home: Dbcheckerscreen(),
      /* initialRoute: 'p1',
       routes: {
         'p1' :(c) => Signup() ,
