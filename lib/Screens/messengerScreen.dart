@@ -63,12 +63,12 @@ class Messengerscreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 8,),
-              ListView.separated(
+             /* ListView.separated(
                   shrinkWrap: true,
                   physics: NeverScrollableScrollPhysics(),
                   itemBuilder: (context, index) => buildChatItem(),
                   separatorBuilder: (context, index) => SizedBox(height: 8,),
-                  itemCount: 10)
+                  itemCount: 10)*/
             ],
           ),
         ),
@@ -95,14 +95,14 @@ Widget buildStoryItem() => Row(
   ],
 );
 
-Widget buildChatItem() => Container(
+Widget buildChatItem(Map model) => Container(
   height: 80,
   child: Row(
     children: [
       CircleAvatar(radius: 100,backgroundImage: AssetImage('assets/img1.jpg'),),
       Column(
         children: [
-          Text('Ahmed MO'),
+          Text(model['name']),
           Text('Hi I am there'),
         ],
       ),

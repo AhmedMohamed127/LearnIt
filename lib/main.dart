@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'Authintication/signUp.dart';
 import 'Screens/DBCheckerScren.dart';
 
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Dbcheckerscreen(),
+      home: Signup(),
      /* initialRoute: 'p1',
       routes: {
         'p1' :(c) => Signup() ,

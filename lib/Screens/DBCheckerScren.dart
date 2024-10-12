@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:newfolder/Helpers/Local/Sqlite.dart';
+import 'package:newfolder/constants.dart';
+
+import 'messengerScreen.dart';
 
 class Dbcheckerscreen extends StatefulWidget {
   const Dbcheckerscreen({super.key});
@@ -9,22 +12,16 @@ class Dbcheckerscreen extends StatefulWidget {
 }
 
 class _DbcheckerscreenState extends State<Dbcheckerscreen> {
-  late DBHelper db;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('dhvbfret'),
       ),
-      body: Center(
-        child: ElevatedButton(onPressed: () {
-          setState(() {
-            db.createdb();
-          });
-        }, child: Text('gjfhguyeftd'),
-
-        ),
-      ),
+      body: ListView.separated(
+          itemBuilder: (context,index) => Text(test[index]['name']),
+          separatorBuilder: (context,index) => SizedBox(height: 10,),
+          itemCount: test.length)
     );
   }
 }
